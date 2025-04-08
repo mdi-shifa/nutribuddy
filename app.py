@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 # Importing Nutribuddy module functions
 from welcome import welcome
 from food_scanner import food_analyser
-# from chatbot import chatbot
+from chatbot import chatbot
 # from prescription import prescription
 # from shop import shop
 # from feedback import feedback
@@ -35,8 +35,8 @@ if selected == 'Welcome':
 elif selected == 'Scan Meal':
     food_analyser()
 
-# elif selected == 'Ask Nutribuddy':
-#     chatbot()
+elif selected == 'Ask Nutribuddy':
+    chatbot()
 
 # elif selected == 'Nutrition Analyzer':
 #     prescription()

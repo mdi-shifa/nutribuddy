@@ -5,7 +5,7 @@ import os
 
 def food_analyser():
     # Configure the API key
-    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+    genai.configure(api_key="AIzaSyDqqYFp12cYBtEmTuh8WuVlu_FVpzKwLjo")
 
     # Load Gemini Vision Model and get response
     def get_gemini_response(image, prompt):
