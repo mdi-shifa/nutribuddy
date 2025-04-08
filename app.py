@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 from welcome import welcome
 from food_scanner import food_analyser
 from chatbot import chatbot
-# from prescription import prescription
+from prescription import prescription
 # from shop import shop
 # from feedback import feedback
 
@@ -23,7 +23,7 @@ with st.sidebar:
         'Nutribuddy',
         ['Welcome', 'Scan Meal', 'Ask Nutribuddy', 'Prescription Analyzer',
            'Shop Smart', 'Contact & Feedback'],
-        icons=['house', 'camera', 'chat-dots', 'clipboard-data', 'person-check', 'cart', 'envelope'],
+        icons=['house', 'camera', 'chat-dots', 'clipboard-data', 'cart', 'envelope'],
         menu_icon="🥗",
         default_index=0
     )
@@ -38,12 +38,10 @@ elif selected == 'Scan Meal':
 elif selected == 'Ask Nutribuddy':
     chatbot()
 
-# elif selected == 'Nutrition Analyzer':
-#     prescription()
+elif selected == 'Nutrition Analyzer':
+    prescription()
 
-# elif selected == 'Get Diet Plan':
-#     st.warning("Diet Plan page is not yet implemented.")  # Placeholder
-
+ 
 # elif selected == 'Shop Smart':
 #     shop()
 
