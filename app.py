@@ -6,7 +6,7 @@ from welcome import welcome
 from food_scanner import food_analyser
 from chatbot import chatbot
 from prescription import prescription
-# from shop import shop
+from shop import shop
 # from feedback import feedback
 
 # Page config
@@ -38,12 +38,12 @@ elif selected == 'Scan Meal':
 elif selected == 'Ask Nutribuddy':
     chatbot()
 
-elif selected == 'Nutrition Analyzer':
+elif selected == 'Prescription Analyzer':
     prescription()
 
  
-# elif selected == 'Shop Smart':
-#     shop()
+elif selected == 'Shop Smart':
+  shop()
 
 # elif selected == 'Contact & Feedback':
 #     feedback()
