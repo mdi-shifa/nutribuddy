@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 
 # Importing Nutribuddy module functions
 from welcome import welcome
-# from food_scanner import food_scanner
+from food_scanner import food_analyser
 # from chatbot import chatbot
 # from prescription import prescription
 # from shop import shop
@@ -32,8 +32,8 @@ with st.sidebar:
 if selected == 'Welcome':
     welcome()
 
-# elif selected == 'Scan Meal':
-#     food_scanner()
+elif selected == 'Scan Meal':
+    food_analyser()
 
 # elif selected == 'Ask Nutribuddy':
 #     chatbot()
